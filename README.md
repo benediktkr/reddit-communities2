@@ -10,7 +10,7 @@ DISCLAIMER: This is purely a weekend/evening hack project.
 
 Looking at the crazy side of reddit:
 
-```python
+```
 $ pipenv run python run.py --seed-subreddit the_donald
 Checking where users from /r/the_donald also post...
 [('The_Donald', 1734),
