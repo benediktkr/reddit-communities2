@@ -10,12 +10,13 @@ POST_MODES = [   "hot"
                , "rising"
                , "controversial"
                , "top" ]
-USER_AGENT = "github.com/benediktkr/reddit-communities2"
+USER_AGENT = "python:github.com/benediktkr/reddit-communities2:v0.0.1 by /u/benediktkr"
 
 def get_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("--seed-subreddit", required=True)
     parser.add_argument("--subreddit-mode", choices=POST_MODES, default="hot")
+    parser.add_argument("--debug", action="store_true")
     parser.add_argument("--post-limit", type=int, default=25)
 
     return parser.parse_args()
